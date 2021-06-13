@@ -1,0 +1,18 @@
+body {
+  font-family: Roboto, arial, sans-serif;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+a.navlink:link,
+a.navlink:visited,
+a.navlink:active,
+a.navlink:hover {
+  text-decoration: dashed;
+}
