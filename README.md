@@ -1,5 +1,7 @@
 # Google Homepage
 
+Live demo here: https://paperjace.github.io/google-homepage/
+
 A deconstruction and rebuilding of the main homepage of www.google.com. This is the first project from [The Odin Project](https://www.theodinproject.com/).
 
 Some skills used in this project include:
