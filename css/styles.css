@@ -24,20 +24,19 @@ ul {
   display: inline-block;
   margin: 0;
   padding: 0;
-  vertical-align: top;
 }
 
 li {
   padding: 0;
-  margin: 0;
   margin-left: 15px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   list-style: none;
   display: inline-block;
 }
 
-nav {
-  align-items: center;
+header {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin-top: 20px;
 }
@@ -50,7 +49,8 @@ main {
 }
 
 footer {
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
   margin-top: 20px;
   background-color: #f2f2f2;
@@ -60,22 +60,39 @@ footer > a {
   color: red;
 }
 
-.move-left {
-  float: left;
+.top-left-nav-container,
+.top-right-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 300px; */
+  vertical-align: middle;
 }
 
-.move-right {
-  float: right;
+.gmail-images-container {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.app-account-container {
+  flex-grow: 1;
+}
+
+.dots-container {
+  display: inline-block;
+  padding: 9px;
+}
+.dots-container:hover {
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 99999px;
 }
 
 .dots {
   display: inline-block;
-  width: 20px;
-  height: 20px;
   padding: 0;
   margin: 0;
-  margin-left: 20px;
-  margin-top: 6px;
+  /* margin-left: 20px;
+  margin-top: 6px; */
   vertical-align: top;
   color: hsl(0, 0%, 45%);
 }
@@ -89,6 +106,11 @@ footer > a {
   display: inline-block;
   vertical-align: top;
   color: hsl(0, 0%, 45%);
+}
+
+.profile-icon:hover {
+  box-shadow: 0px 0px 5px hsl(0, 0%, 50%);
+  border-radius: 9999px;
 }
 
 .logo-search-container {
@@ -110,6 +132,12 @@ footer > a {
   outline: none;
 }
 
+.search-bar:focus,
+.search-bar:hover,
+.search-bar:active {
+  box-shadow: 0px 0px 6px hsl(0, 0%, 85%);
+}
+
 #search-input {
   outline: none;
   padding: 0;
@@ -119,12 +147,6 @@ footer > a {
   width: 100%;
   height: 2em;
   font-size: 14px;
-}
-
-.search-bar:focus,
-.search-bar:hover,
-.search-bar:active {
-  box-shadow: 0px 0px 6px hsl(0, 0%, 85%);
 }
 
 .search-icon {
